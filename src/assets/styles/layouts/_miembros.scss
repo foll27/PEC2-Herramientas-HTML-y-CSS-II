@@ -1,0 +1,22 @@
+.miembros {
+    margin-top: $alturaMargen;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.card {
+    width: calc(100% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+
+    @include media-breakpoint-up(lg) {
+        width: calc(33.33% - 10px);
+    }
+}

@@ -1,0 +1,57 @@
+.footer {
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+
+
+
+        @include media-breakpoint-up(lg) {
+            padding: 70px;
+        }
+    }
+
+    &__navlist {
+        list-style: none;
+        text-transform: uppercase;
+        flex: 1;
+        text-align: center;
+    }
+
+
+    &__clublogo {
+        height: 75px;
+        width: auto;
+    }
+
+    // Footer UOC
+    &--corporate {
+        height: 120px;
+        background-color: $uoc-corporate;
+        color: white;
+        font-size: 0.9rem;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            height: 80px;
+        }
+    }
+
+    &__UOClogo {
+        margin: 20px;
+
+        @include media-breakpoint-up(lg) {
+            margin-left: 50px;
+            float: left;
+        }
+    }
+
+
+    &__autor {
+
+        @include media-breakpoint-up(lg) {
+            text-align: end;
+            padding: 30px 50px 0 0;
+        }
+    }
+}

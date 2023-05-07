@@ -1,0 +1,70 @@
+.historia {
+  margin-top: $alturaMargen;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__card {
+    display: inline-block;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 1027px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 7px;
+  }
+}
+
+.bases {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+
+  &__container {
+    width: 70%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &__list {
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0 0 10px;
+  }
+
+  &__element {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__element::before {
+    content: counter(item);
+    counter-increment: item;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+  }
+}

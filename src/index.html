@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>PEC 2 - Herramientas HTML y CSS II</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+
+  <main class="torneo">
+    <h1 class="torneo__titulo">Torneo de Ajederez</h1>
+    <h2 class="torneo__titulo2">Club de Ajederez Alfil Envenenado</h2>
+    <p class="torneo__descripcion">¡Celebra con nosotros nuestro cumpleaños! <br>Ven a disfrutar del toreno que organiza
+      el
+      Club de Ajederez Alfil Envenenado ya sea como jugador o como visitante.
+      Habrá 3 categorias con grandes premios, varias actividades y alguna sorpresa... <br>¡No te lo pierdas!
+    </p>
+
+
+    <div class="torneo__poster">
+      <img class="torneo__imagen" src="/src/assets/images/torneo.jpg" alt="Fotografia promocional del torneo">
+    </div>
+
+    <div class="torneo__donde">
+      <p>En la avenida de las Flores
+        17, ValleSoleado.</p>
+    </div>
+
+    <div class="torneo__cuando">
+      <p>El 23 de julio a partir de las 9:00</p>
+    </div>
+    <div class="torneo__info">
+      <p>Para cualquier duda, contacta con nosotros en info@alfilenvenenado.com o llámanos al 965065065</p>
+    </div>
+
+    <button type="button" class="torneo__button btn btn-primary">Inscribete</button>
+    <br>
+    <br>
+  </main>
+
+  <include src="./views/footer.html"></include>
+
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>
